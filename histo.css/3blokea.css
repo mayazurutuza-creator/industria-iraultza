@@ -1,0 +1,212 @@
+:root {
+    --atzealde-kolorea: #050505; 
+    --akzentu-kolorea: #ffc400; 
+    --testu-kolorea: #ffffff;
+    --serif-font: "panchang", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--atzealde-kolorea);
+    color: var(--testu-kolorea);
+    font-family:'Georgia', serif;
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Nabigazio Nagusia */
+
+.menua {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menua li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: var(--sans-font);
+}
+
+.menua a {
+    color: var(--akzentu-kolorea);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menua a:hover {
+    color: white;
+    text-shadow: 0 0 10px var(--akzentu-kolorea);
+}
+.bfc-testuingurua {
+    display: flow-root;
+}
+
+.titulua {
+    font-family: var(--serif-font);
+    color: var(--akzentu-kolorea);
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--akzentu-kolorea);
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.irudi-dokumentua {
+    float: left;
+    width: 320px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #0a0a0a;
+}
+
+.irudi-dokumentua img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    display: block;
+}
+
+.oin-testua {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.parrafoa {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.float-ezkerra {
+    float: left;
+}
+
+strong {
+    color: var(--akzentu-kolorea);
+    font-weight: bold;
+}
+/* Zure lehendik dituzun sustraiak eta oinarria */
+:root {
+    --atzealde-kolorea: #0a0a0a; 
+    --akzentu-kolorea:#ffc400; 
+    --testu-kolorea: #f5f5f5;
+    --serif-font: "panchang", sans-serif;
+}
+
+/* Footer-aren diseinu editoriala */
+.bibliografia-footer {
+    margin-top: 100px;
+    padding: 60px 0;
+    border-top: 1px solid #222;
+    background-color: var(--atzealde-kolorea);
+}
+
+.bibliografia-edukia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.biblio-atala {
+    flex: 1;
+    min-width: 280px;
+}
+
+.biblio-atala h3 {
+    font-family: var(--serif-font);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--testu-kolorea);
+    opacity: 0.6;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+.biblio-zerrenda {
+    list-style: none;
+}
+
+.biblio-zerrenda li {
+    margin-bottom: 20px;
+    padding-left: 25px; /* Sangria frantsesa: tarterako tokia */
+    text-indent: -25px; /* Sangria frantsesa: lehen lerroa atera */
+    line-height: 1.6;
+}
+
+.biblio-zerrenda a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Georgia', serif; /* Kutsu editoriala */
+    transition: 0.3s ease;
+}
+
+.biblio-zerrenda a em {
+    color: var(--testu-kolorea); /* Izenburuak argiago */
+    font-style: italic;
+}
+
+.biblio-zerrenda a:hover {
+    color: var(--akzentu-kolorea);
+}
+
+/* Beheko copyright atala */
+.footer-behea {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #111;
+}
+
+.footer-behea .oin-testua {
+    color: #444;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Pantaila txikietarako egokitzapena */
+@media (max-width: 800px) {
+    .bibliografia-edukia {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .biblio-atala {
+        width: 100%;
+    }
+}
+
+/* Erantzulea (Responsive) */
+@media (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+    
+    .irudi-dokumentua {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .titulua {
+        font-size: 24px;
+    }
+}

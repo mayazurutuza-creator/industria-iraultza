@@ -1,0 +1,186 @@
+/* 1. ALDAGAIAK (CSS Variables) */
+:root {
+    --atzealde-kolorea: #050505; 
+    --akzentu-kolorea: #2c70b0;   /* Urdin elektrikoa */
+    --testu-kolorea: #ffffff;
+    --serif-font: "panchang", sans-serif;
+    --sans-font: "montserrat", sans-serif;
+    --tartea: 40px;
+}
+
+/* Reset estiloak */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--atzealde-kolorea);
+    color: var(--testu-kolorea);
+    font-family: var(--serif-font);
+    padding: var(--tartea);
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* 2. BFC (Block Formatting Context) */
+.bfc-testuingurua {
+    display: flow-root; 
+    margin-bottom: 120px; /* Tarte zabalagoa atalen artean */
+    width: 100%;
+}
+
+/* 3. FLOATS (Posizionamendua) */
+.float-ezkerra {
+    float: left;
+}
+
+/* Nabigazio Nagusia */
+.nabigazio-nagusia .logoa {
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--akzentu-kolorea);
+    line-height: 1;
+}
+
+.menua {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menua li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: var(--sans-font);
+}
+
+.menua a {
+    color: var(--akzentu-kolorea);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menua a:hover {
+    color: white;
+    text-shadow: 0 0 10px var(--akzentu-kolorea);
+}
+
+/* Eduki Blokeak */
+.irudi-kutxa {
+    width: 45%;
+    height: 500px;
+    background-color: #111;
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+.testu-kutxa {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.titulua {
+    font-size: 42px;
+    color: var(--akzentu-kolorea);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+/* Bigarren Nabigazioa (Gizarte eragina atala) */
+.bigarren-nav {
+    list-style: none;
+    margin-top: 20px;
+    font-family: var(--sans-font);
+}
+
+.bigarren-nav li a {
+    color: var(--testu-kolorea);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-left: 0px solid var(--akzentu-kolorea);
+}
+
+.bigarren-nav a:hover {
+    color: #0088ff;
+    padding-left: 20px;
+    border-left: 4px solid var(--akzentu-kolorea);
+}
+.irudi-kutxa img{
+    width: 100%;
+    height: 100%;
+}
+/* Haustura Atala (Grid banaketa) */
+.produktu-kutxa {
+    border: 1px solid #333;
+    padding: var(--tartea);
+    background: #080808;
+    transition: border-color 0.3s ease;
+}
+#museoa{
+    color:orange;
+    font-size: 30px;
+    font-family: "panchang", sans-serif;
+    margin-top: 50px;
+    border:solid orange 2px;
+    width: 35%;
+   
+}
+.produktu-kutxa:hover {
+    border-color: var(--akzentu-kolorea);
+}
+
+/* Irudi klasikoak */
+.produktu-irudia {
+    background-image: url('../histo.img/egurezko.tipoak.png'); /* Ziurtatu bidea zuzena dela */
+    background-color: #111;
+}
+
+.produktu-irudia2 {
+    background-image: url('../histo.img/Susse_Frères_Daguerreotype_camera_1839.jpg');
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Banner Interaktiboa */
+.bideo-edukiontzia {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(90deg, #050505 0%, #0a1a2a 50%, #050505 100%);
+    border-top: 1px solid var(--akzentu-kolorea);
+    border-bottom: 1px solid var(--akzentu-kolorea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .irudi-kutxa, .testu-kutxa {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        height: auto;
+    }
+    
+    .irudi-kutxa {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    /* Grid-a zutabe bakarrean jarri mugikorretan */
+    div[style*="display: grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
