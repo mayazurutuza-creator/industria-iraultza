@@ -1,0 +1,185 @@
+
+:root {
+    --atzealde-kolorea: #050505; 
+    --akzentu-kolorea: #44aa8a; /* Berde ilun "komertziala" */
+    --testu-kolorea: #ffffff;
+    --serif-font: "panchang", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--atzealde-kolorea);
+    color: var(--testu-kolorea);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bfc-testuingurua {
+    display: flow-root;
+}
+
+.titulua {
+    font-family: var(--serif-font);
+    color: var(--akzentu-kolorea);
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--akzentu-kolorea);
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.irudi-dokumentua {
+    float: left;
+    width: 320px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #0a0a0a;
+}
+
+.irudi-dokumentua img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.9;
+}
+
+.oin-testua {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.parrafoa {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.float-ezkerra {
+    float: left;
+}
+
+strong {
+    color: var(--akzentu-kolorea);
+}
+/* Nabigazio Nagusia */
+.nabigazio-nagusia .logoa {
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--akzentu-kolorea);
+    line-height: 1;
+}
+
+.menua {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menua li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: var(--sans-font);
+}
+
+.menua a {
+    color: var(--akzentu-kolorea);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menua a:hover {
+    color: white;
+    text-shadow: 0 0 10px var(--akzentu-kolorea);
+}
+/* Footer Estilo Espezifikoak */
+.bibliografia-footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #333;
+    background-color: var(--atzealde-kolorea);
+}
+
+.bibliografia-edukia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.biblio-atala {
+    flex: 1;
+    min-width: 300px;
+}
+
+.biblio-atala h3 {
+    font-family: var(--serif-font);
+    color: var(--testu-kolorea);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.biblio-zerrenda {
+    list-style: none;
+}
+
+.biblio-zerrenda li {
+    margin-bottom: 18px;
+    padding-left: 20px;
+    text-indent: -20px; /* APA sangria frantsesa */
+    line-height: 1.6;
+}
+
+.biblio-zerrenda a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.biblio-zerrenda a em {
+    color: var(--testu-kolorea); /* Liburuaren izenburua nabarmendu */
+    font-style: italic;
+}
+
+.biblio-zerrenda a:hover {
+    color: var(--akzentu-kolorea);
+}
+
+.footer-behea {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Mugikorrerako egokitzapena */
+@media (max-width: 800px) {
+    .bibliografia-edukia {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .irudi-dokumentua {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+      <link rel="stylesheet" href="./css/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industria Iraultza eta Diseinu Grafikoa</title>
+    <style>
+        /* Estetika negatiboa eta urdina */
+        body { 
+         
+            line-height: 1.6; 
+            color: #e0e0e0; 
+            background-color: #000000; /* Urdin ilun sakona */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header { 
+               font-family: "panchang"; 
+            text-align: center; 
+            padding: 40px 0; 
+            color: #ff9500; /* Aqua/Urdin argi deigarria */
+         
+        }
+
+        h2 { 
+               font-family: "panchang"; 
+            text-align: center;
+            color: #ff9500; /* Aqua/Urdin argi deigarria */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 50px;
+            border-bottom: 1px solid #112240;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px; 
+        }
+
+        /* Txartelen estiloa */
+        .card { 
+               font-family: 'Segoe UI', Arial, sans-serif; 
+            background: #171717; /* Urdin pixka bat argiagoa txarteletarako */
+            padding: 25px; 
+            border-radius: 12px; 
+            border: 1px solid #233554;
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover { 
+            transform: translateY(-10px); 
+            color: #ff9500; /* Aqua/Urdin argi deigarria */
+            border-color:#ff9500 ;
+            box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
+        }
+
+        .card img { 
+            width: 100%; 
+            height: 800px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+            filter: grayscale(20%) contrast(110%);
+        }
+
+        .card h3 { 
+               font-family: 'Segoe UI', Arial, sans-serif; 
+            margin-top: 0; 
+            color: #ccd6f6; /* Zuri-urdinxka */
+            font-size: 1.4rem;
+        }
+
+        .card p {
+               font-family: 'Segoe UI', Arial, sans-serif; 
+            color: #8892b0; /* Testu sekundario urdinxka */
+            font-size: 0.95rem;
+        }
+
+        footer {
+               font-family: 'Segoe UI', Arial, sans-serif; 
+            text-align: center;
+            padding: 50px 0;
+            color: #495670;
+            font-size: 0.8rem;
+        }
+.menua {
+    list-style: none;
+    margin-top: 15px;
+    
+}
+
+.menua li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: var(--sans-font);
+   
+}
+
+.menua a {
+    color: var(--akzentu-kolorea);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menua a:hover {
+    color: rgb(255, 183, 0);
+    text-shadow: 0 0 10px var(--akzentu-kolorea);
+}
+        /* Nabarmendutako testua */
+        .highlight {
+            color: #ff9500;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <nav class="nabigazio-nagusia bfc-testuingurua">
+    <div class="logoa">INDUSTRIA IRAULTZA</div>
+    <ul class="menua">
+        <li><a href="1blokea.html">1.BLOKEA</a></li>
+        <li><a href="2blokea.html">2.BLOKEA</a></li>
+        <li><a href="3blokea.html">3.BLOKEA</a></li>
+        <li><a href="4blokea.html">4.BLOKEA</a></li>
+        <li><a href="5blokea.html">5.BLOKEA</a></li>
+         <li><a href="index.html">HASIERA</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <header>
+        <h1>DISEINU GRAFIKOAREN IRAULTZA</h1>
+        <p>Industria Aroko berrikuntza bisualak eta estetika berria</p>
+    </header>
+
+    <h2>Teknika eta Argazkigintza</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./img/egurezko.tipoak.webp" alt="Egurezko tipoak">
+            <h3>Egurezko tipoak</h3>
+            <p><span class="highlight">Darius Wells-ek</span> 1827an asmatutako makineriaren bidez, tamaina handiko letrak egurrean ekoizten hasi ziren. Metala baino arinagoa eta merkeagoa zenez, kartel erraldoiak deformatu gabe inprimatzea ahalbidetu zuen.</p>
+        </div>
+
+        <div class="card">
+            <img src="./img/Susse_Frères_Daguerreotype_camera_1839 (1).jpg" alt="Dagerrotipoa">
+            <h3>Dagerrotipoak</h3>
+            <p>1839an <span class="highlight">Louis Daguerrek</span> aurkeztua. Kobre-plaka zilarreztatuen gainean irudi nitidoak lortzen zituen. Argazkigintzaren lehen jauzi kualitatiboa izan zen, irudi bakoitza objektu bakar eta errepikaezin bihurtuz.</p>
+        </div>
+    </div>
+
+    <h2>Kolorea eta Ilustrazioa</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./img/cromolitografia.jpg" alt="Kromolitografia">
+            <h3>Kromolitografiak</h3>
+            <p>Olioaren eta uraren arteko aldarapen kimikoan oinarritutako inprimaketa. <span class="highlight">Louis Prangek</span> teknika hau findu eta kolorea herritar guztien etxeetara eramatea lortu zuen, artea demokratizatuz.</p>
+        </div>
+
+        <div class="card">
+            <img src="./img/crane-woman.jpg" alt="Haur-liburuen ilustrazioa">
+            <h3>Urrezko Aroko Ilustrazioak</h3>
+            <p><span class="highlight">Crane, Caldecott eta Greenaway</span> hirukoak liburua artelan integral moduan ulertu zuten. Irudia ez zen testuaren laguntzaile soil bat, kontakizunaren muin narratiboa baizik.</p>
+        </div>
+    </div>
+
+    <h2>Berrikuntza Tipografikoak</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./img/POEM-Thorne6.jpg" alt="Fat Face">
+            <h3>Fat Faces</h3>
+            <p><span class="highlight">Robert Thornek</span> 1803an sortuak. Letra klasikoen kontrastea muturreraino eraman zuen, trazu oso lodiekin hiri zaratatsuetan kontsumitzailearen arreta begiratu batean harrapatzeko.</p>
+        </div>
+
+        <div class="card">
+             <img src="./img/grotesque.webp" alt="Fat Face">
+            <h3>Slab Serif (Egipziarrak)</h3>
+            <p><span class="highlight">Vincent Figginsek</span> 1815ean plazaratuak. Erremate karratu eta sendoak dituzte, Napoleonen ostean Europan zegoen Egiptorekiko lilura eta monumentaltasuna irudikatuz.</p>
+        </div>
+
+        <div class="card">
+                <img src="./img/2014-01-19th-century-advertising-handbill1.jpeg" alt="Fat Face">
+            <h3>Sans Serif (Groteskoak)</h3>
+            <p><span class="highlight">William Caslon IV.ak</span> 1816an aurkeztua. Hasieran "Grotesque" deitua, hamarkadak behar izan zituen onartua izateko. Gaur egun diseinu modernoaren eta soiltasunaren ikur nagusia da.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Diseinu Grafikoaren Historia | Infografia Digitala</p>
+    </footer>
+</div>
+
+</body>
+</html>
